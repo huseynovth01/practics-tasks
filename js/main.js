@@ -1,12 +1,13 @@
-//funksiya ile ededin tersini tapmaq
+//*funksiya ile ededin tersini tapmaq
 
-function reverse_a_number(n)
-{
-  n=n+ "";
+// function reverse_a_number(n)
+// {
+//   n=n+ "";
 
-  return n.split("").reverse().join("");
-}
-console.log(Number(reverse_a_number(1234)));
+//   return n.split("").reverse().join("");
+// }
+// console.log(Number(reverse_a_number(1234)));
+
 
 // reverse_a_number adında bir fonksiyon tanımlanıyor. Bu fonksiyon bir sayı alır (n).
 
@@ -23,6 +24,12 @@ console.log(Number(reverse_a_number(1234)));
 // Bu kod, sayıyı tersine çevirme işlemini string manipülasyonu kullanarak gerçekleştirir. Sayıyı tersine çevirmek için string metotları (split, reverse, join) kullanır ve ardından tekrar sayıya dönüştürür. Bu şekilde, sayının rakamları tersine çevrilir.
 
 
+
+function truncate(str, no_words) {
+  return str.split(" ").slice(0, no_words).join(" ");
+}
+
+console.log(truncate('Bu kod, sayıyı tersine çevirme işlemini string manipülasyonu kullanarak gerçekleştirir.', 7));
 
 
 
